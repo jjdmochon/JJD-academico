@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio académico de Juan José Díaz-Mochón — Candidato a Catedrático de Universidad, Universidad de Granada. Publicaciones, patentes, tesis doctorales y proyectos de investigación.">
+  <meta name="keywords" content="Díaz-Mochón, Cátedra, Universidad de Granada, GENYO, publicaciones, patentes, tesis, biopsia líquida, microRNA, CRISPR, PNA">
+  <meta name="author" content="Juan José Díaz-Mochón">
+  <title>Prof. Juan José Díaz-Mochón — Portfolio Académico · Cátedra UGR</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <!-- D3.js -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- NAVIGATION                                      -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#inicio" class="navbar-brand">
+        <img src="assets/Logo_JJD.png?v=3" alt="Logo JJD-M" style="height: 36px; width: auto; border-radius: var(--radius-sm);">
+        JJD-M · Cátedra
+      </a>
+
+      <button class="nav-toggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#cifras">Cifras</a></li>
+        <li><a href="#trayectoria">Trayectoria</a></li>
+        <li><a href="#publicaciones">Publicaciones</a></li>
+        <li><a href="#tesis">Tesis</a></li>
+        <li><a href="#patentes">Patentes</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#lineas">Investigación</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- HERO                                            -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="overline">Candidatura a Cátedra de Universidad</div>
+        <h1>Juan José Díaz-Mochón</h1>
+        <div class="subtitle">Profesor Titular · Universidad de Granada</div>
+        <p class="description">
+          Científico emprendedor e investigador de trayectoria internacional en la intersección de la academia y la empresa. 
+          Especializado en biopsia líquida y biología química, ha desarrollado su carrera en centros de excelencia de España, el Reino Unido e Italia. 
+          Co-fundador de la International Society of Liquid Biopsy (ISLB) y de múltiples spin-offs biotecnológicas como DESTINA Genomics Ltd. y CRISPNA SL, 
+          liderando la transferencia de tecnología innovadora para el diagnóstico molecular avanzado y la medicina de precisión.
+        </p>
+        <div class="hero-badges">
+          <span class="hero-badge">🏛️ Universidad de Granada</span>
+          <span class="hero-badge">🧬 GENYO</span>
+          <span class="hero-badge">🔬 Química Farmacéutica</span>
+          <span class="hero-badge">💊 Biotecnología</span>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/Logo_JJD.png?v=3" alt="Juan José Díaz-Mochón" id="hero-photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- KPI DASHBOARD                                   -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="section section-alt" id="cifras">
+    <div class="container">
+      <div class="section-header">
+        <img src="assets/Wordlogo_JJD_transparente.png?v=2" alt="Brand Mark" class="section-watermark">
+        <h2>Producción Científica en Cifras</h2>
+        <p>Un recorrido cuantitativo por más de dos décadas de investigación</p>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi-card reveal">
+          <div class="kpi-icon">📄</div>
+          <div class="kpi-number" data-target="95">0</div>
+          <div class="kpi-label">Artículos</div>
+        </div>
+        <div class="kpi-card reveal">
+          <div class="kpi-icon">🔬</div>
+          <div class="kpi-number" data-target="16">0</div>
+          <div class="kpi-label">Patentes</div>
+        </div>
+        <div class="kpi-card reveal">
+          <div class="kpi-icon">🎓</div>
+          <div class="kpi-number" data-target="11" data-suffix="">0</div>
+          <div class="kpi-label">Tesis Doctorales</div>
+        </div>
+        <div class="kpi-card reveal">
+          <div class="kpi-icon">🚀</div>
+          <div class="kpi-number" data-target="24">0</div>
+          <div class="kpi-label">Proyectos Financiados</div>
+        </div>
+        <div class="kpi-card reveal">
+          <div class="kpi-icon">📅</div>
+          <div class="kpi-number" data-target="24" data-suffix=" años">0</div>
+          <div class="kpi-label">De Carrera</div>
+        </div>
+      </div>
+
+      <!-- Charts row -->
+      <div style="display:grid; grid-template-columns: 2fr 1fr; gap:24px;">
+        <div class="chart-container reveal">
+          <h3>📊 Publicaciones por Año</h3>
+          <div class="chart-wrapper">
+            <canvas id="pubsPerYearChart"></canvas>
+          </div>
+        </div>
+        <div class="chart-container reveal">
+          <h3>📈 Distribución por Tipo</h3>
+          <div class="chart-wrapper">
+            <canvas id="docTypeChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- TRAYECTORIA (CV)                                -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="section" id="trayectoria">
+    <div class="container">
+      <div class="section-header">
+        <img src="assets/Wordlogo_JJD_transparente.png?v=2" alt="Brand Mark" class="section-watermark">
+        <h2>Trayectoria Profesional</h2>
+        <p>Sólida trayectoria en la interfaz de la investigación de excelencia y la transferencia empresarial internacional</p>
+      </div>
+
+      <div class="cv-grid reveal">
+        <!-- Timeline Column (60%) -->
+        <div class="cv-timeline-col">
+          <h3>💼 Recorrido Profesional</h3>
+          <div class="cv-timeline">
+            <div class="cv-timeline-item">
+              <div class="cv-timeline-date">2025 - Presente</div>
+              <div class="cv-timeline-content">
+                <h4>Asesor Estratégico del CEO</h4>
+                <h5>DESTINA Genomics Ltd.</h5>
+                <p>Asesoramiento estratégico tras liderar la reestructuración y captar inversiones de capital privado y la subvención europea EIC Accelerator en 2025.</p>
+              </div>
+            </div>
+
+            <div class="cv-timeline-item">
+              <div class="cv-timeline-date">2019 - Presente</div>
+              <div class="cv-timeline-content">
+                <h4>Profesor Titular de Universidad</h4>
+                <h5>Universidad de Granada (UGR)</h5>
+                <p>Docencia de grado y posgrado, liderando líneas de investigación en Biología Química, diagnósticos moleculares avanzados y co-liderando el grupo NanoChemBio en el Centro GENYO.</p>
+              </div>
+            </div>
+
+            <div class="cv-timeline-item">
+              <div class="cv-timeline-date">2020 - 2025</div>
+              <div class="cv-timeline-content">
+                <h4>Chief Executive Officer (CEO)</h4>
+                <h5>DESTINA Genomics Ltd. (Edimburgo, Escocia / Granada, España)</h5>
+                <p>Liderazgo ejecutivo de la compañía biotecnológica internacional, firmando acuerdos clave de licencia y suministro con corporaciones como MilliporeSigma, Mecwins y Optoi, incrementando significativamente los ingresos comerciales de la empresa.</p>
+              </div>
+            </div>
+
+            <div class="cv-timeline-item">
+              <div class="cv-timeline-date">2010 - 2020</div>
+              <div class="cv-timeline-content">
+                <h4>Co-fundador y Chief Scientific Officer (CSO)</h4>
+                <h5>DESTINA Genomics Ltd.</h5>
+                <p>Dirección científica de la compañía, integrando la tecnología química dinámica patentada para la detección ultrasensible de microRNAs y otros biomarcadores en plataformas comerciales.</p>
+              </div>
+            </div>
+
+            <div class="cv-timeline-item">
+              <div class="cv-timeline-date">2011 - 2017</div>
+              <div class="cv-timeline-content">
+                <h4>Investigador Contratado Ramón y Cajal</h4>
+                <h5>Universidad de Granada</h5>
+                <p>Atracción de talento investigador e implantación del grupo de investigación y la tecnología de química combinatoria en la UGR.</p>
+              </div>
+            </div>
+
+            <div class="cv-timeline-item">
+              <div class="cv-timeline-date">2005 - 2010</div>
+              <div class="cv-timeline-content">
+                <h4>Postdoctoral Research Fellow & Assistant</h4>
+                <h5>The University of Edinburgh, Escocia</h5>
+                <p>Desarrollo de librerías peptídicas codificadas con PNA y microarrays poliméricos para ensayos celulares y cribados de alto rendimiento en el laboratorio del Prof. Mark Bradley.</p>
+              </div>
+            </div>
+
+            <div class="cv-timeline-item">
+              <div class="cv-timeline-date">2002 - 2005</div>
+              <div class="cv-timeline-content">
+                <h4>Postdoctoral Research Assistant</h4>
+                <h5>The University of Southampton, Inglaterra</h5>
+                <p>Investigación en síntesis en fase sólida y plataformas miniaturizadas basadas en microesferas de polímero.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Details Column (40%) -->
+        <div class="cv-details-col">
+          <!-- Educación -->
+          <div class="cv-card">
+            <h3>🎓 Educación y Títulos</h3>
+            <div class="cv-card-item">
+              <div class="cv-card-title">Doctor en Farmacia (Química Medicinal)</div>
+              <div class="cv-card-sub">Universidad de Granada · 2001</div>
+              <p>Mención Cum Laude por unanimidad.</p>
+            </div>
+            <div class="cv-card-item">
+              <div class="cv-card-title">Licenciatura en Farmacia</div>
+              <div class="cv-card-sub">Universidad de Granada · 1996</div>
+              <p>Expediente de 3.3 sobre 4.0.</p>
+            </div>
+          </div>
+
+          <!-- Liderazgo y Transferencia -->
+          <div class="cv-card">
+            <h3>💡 Emprendimiento y Liderazgo</h3>
+            <p><strong>International Society of Liquid Biopsy (ISLB):</strong> Co-fundador y Tesorero (2017-2021). Entidad de referencia global en biopsia líquida.</p>
+            <p style="margin-top: 10px;"><strong>Creación de Spin-offs:</strong> Promotor y asesor de spin-offs tecnológicas activas:</p>
+            <ul style="margin-left: 20px; margin-top: 5px;">
+              <li><em>DESTINA Genomics Ltd. (2010)</em></li>
+              <li><em>Nanogetic SL (2013)</em> — especialización en nano-dispositivos terapéuticos</li>
+              <li><em>CRISPNA SL</em> — edición genómica y diagnóstico CRISPR</li>
+            </ul>
+          </div>
+
+          <!-- Docencia -->
+          <div class="cv-card">
+            <h3>🏫 Docencia Universitaria</h3>
+            <p><strong>Grados:</strong> Imparte docencia en asignaturas troncales del Grado de Farmacia y del Grado de Biotecnología en la Universidad de Granada (UGR).</p>
+            <p style="margin-top: 8px;"><strong>Posgrados y Dirección:</strong> Profesor en el Máster de Investigación y Desarrollo de Medicamentos y en el Programa de Doctorado en Biomedicina, habiendo dirigido 11 tesis doctorales con éxito.</p>
+          </div>
+
+          <!-- Estancias Internacionales -->
+          <div class="cv-card">
+            <h3>🌍 Estancias Internacionales</h3>
+            <p><strong>Reino Unido:</strong> Más de 8 años de trayectoria investigadora continua en prestigiosas instituciones británicas:</p>
+            <ul style="margin-left: 20px; margin-top: 5px;">
+              <li><em>The University of Southampton (Inglaterra)</em> — Investigación posdoctoral en síntesis combinatoria y microesferas (2002-2005).</li>
+              <li><em>The University of Edinburgh (Escocia)</em> — Investigación avanzada en microarrays poliméricos y cribado celular (2005-2010).</li>
+            </ul>
+          </div>
+
+          <!-- Citaciones estadísticas -->
+          <div class="cv-card citation-card">
+            <h3>📈 Impacto Científico (Junio 2026)</h3>
+            <p>Reconocimiento internacional sostenido, con más de 2.350 citas en manuscritos revisados por pares y un factor H de 29.</p>
+            <div class="citation-img-wrapper" style="margin-top: 12px; text-align: center;">
+              <img src="assets/Estadisticas_citaciones_june_2026.png" alt="Estadísticas de Citaciones junio 2026" class="citation-img" style="border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid rgba(0, 0, 0, 0.05); max-width: 100%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- PUBLICATIONS                                    -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="section" id="publicaciones">
+    <div class="container">
+      <div class="section-header">
+        <img src="assets/Wordlogo_JJD_transparente.png?v=2" alt="Brand Mark" class="section-watermark">
+        <h2>Publicaciones</h2>
+        <p>Artículos en revistas internacionales, capítulos de libro y preprints</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-bar">
+        <input type="text" id="pub-search" placeholder="🔍 Buscar por título, autor o revista...">
+        <select id="pub-type-filter">
+          <option value="all">Todos los tipos</option>
+          <option value="article">Artículos</option>
+          <option value="chapter">Capítulos</option>
+          <option value="preprint">Preprints</option>
+        </select>
+      </div>
+
+      <!-- View Toggle -->
+      <div class="view-toggle-wrapper">
+        <div class="view-toggle" id="pub-toggle">
+          <button class="active" data-view="cards">📋 Tarjetas</button>
+          <button data-view="table">📊 Tabla</button>
+        </div>
+      </div>
+
+      <!-- Card View -->
+      <div id="pub-cards-view"></div>
+
+      <!-- Table View -->
+      <div id="pub-table-view" class="view-hidden"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- DOCTORAL THESES                                 -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="section section-alt" id="tesis">
+    <div class="container">
+      <div class="section-header">
+        <img src="assets/Wordlogo_JJD_transparente.png?v=2" alt="Brand Mark" class="section-watermark">
+        <h2>Tesis Doctorales Dirigidas</h2>
+        <p>Formación de investigadores en Química Farmacéutica, Nanotecnología y Diagnóstico Molecular</p>
+      </div>
+
+      <!-- View Toggle -->
+      <div class="view-toggle-wrapper">
+        <div class="view-toggle" id="thesis-toggle">
+          <button class="active" data-view="timeline">📅 Timeline</button>
+          <button data-view="grid">🔲 Cuadrícula</button>
+        </div>
+      </div>
+
+      <!-- Timeline View -->
+      <div id="thesis-timeline-view" class="thesis-timeline"></div>
+
+      <!-- Grid View -->
+      <div id="thesis-grid-view" class="thesis-grid view-hidden"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- PATENTS                                         -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="section" id="patentes">
+    <div class="container">
+      <div class="section-header">
+        <img src="assets/Wordlogo_JJD_transparente.png?v=2" alt="Brand Mark" class="section-watermark">
+        <h2>Patentes</h2>
+        <p>16 patentes en diagnóstico molecular, nanotecnología y edición genómica</p>
+      </div>
+
+      <div class="patent-grid" id="patent-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- PROJECTS                                        -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="section section-alt" id="proyectos">
+    <div class="container">
+      <div class="section-header">
+        <img src="assets/Wordlogo_JJD_transparente.png?v=2" alt="Brand Mark" class="section-watermark">
+        <h2>Proyectos de Investigación</h2>
+        <p>Historial completo de 24 proyectos financiados por convocatorias competitivas nacionales y europeas</p>
+      </div>
+
+      <!-- Project Statistics Dashboard -->
+      <div class="project-stats reveal">
+        <div class="project-stat-card">
+          <div class="project-stat-icon">💰</div>
+          <div class="project-stat-info">
+            <span class="project-stat-value" id="project-total-funding">0 €</span>
+            <span class="project-stat-label">Presupuesto Total</span>
+          </div>
+        </div>
+        <div class="project-stat-card">
+          <div class="project-stat-icon">🧪</div>
+          <div class="project-stat-info">
+            <span class="project-stat-value" id="project-funding-ip">0 €</span>
+            <span class="project-stat-label">Presupuesto como IP / Co-IP</span>
+          </div>
+        </div>
+        <div class="project-stat-card">
+          <div class="project-stat-icon">🤝</div>
+          <div class="project-stat-info">
+            <span class="project-stat-value" id="project-funding-colab">0 €</span>
+            <span class="project-stat-label">Presupuesto como Colaborador</span>
+          </div>
+        </div>
+        <div class="project-stat-card">
+          <div class="project-stat-icon">📂</div>
+          <div class="project-stat-info">
+            <div style="display: flex; gap: 12px; align-items: baseline;">
+              <span class="project-stat-value" id="project-total-ip" style="color: var(--teal)">0</span>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">IP</span>
+              <span style="font-size: 1.2rem; color: var(--text-muted);">/</span>
+              <span class="project-stat-value" id="project-total-colab" style="color: var(--text-muted)">0</span>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Colab</span>
+            </div>
+            <span class="project-stat-label">Proyectos por Rol</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filters & Searching -->
+      <div class="filter-bar reveal" style="margin-bottom: 28px;">
+        <div class="search-box" style="flex: 1; min-width: 280px;">
+          <input type="text" id="project-search" placeholder="Buscar proyectos por título, código o convocatoria...">
+        </div>
+        <div class="filter-select">
+          <select id="project-role-filter">
+            <option value="all">Todos los roles</option>
+            <option value="ip">Investigador Principal (IP)</option>
+            <option value="colaborador">Colaborador</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="project-grid-enhanced" id="project-grid"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- GLOBAL TIMELINE                                 -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="section" id="timeline">
+    <div class="container">
+      <div class="section-header">
+        <img src="assets/Wordlogo_JJD_transparente.png?v=2" alt="Brand Mark" class="section-watermark">
+        <h2>Timeline Global</h2>
+        <p>Evolución cronológica de todas las contribuciones (2002–2026)</p>
+      </div>
+
+      <div class="chart-container">
+        <div class="global-timeline">
+          <div class="timeline-track" id="global-timeline-track"></div>
+        </div>
+        <!-- Legend -->
+        <div class="graph-legend" style="margin-top:16px;">
+          <div class="graph-legend-item"><div class="graph-legend-dot" style="background:var(--teal)"></div> Publicaciones</div>
+          <div class="graph-legend-item"><div class="graph-legend-dot" style="background:var(--mint)"></div> Tesis</div>
+          <div class="graph-legend-item"><div class="graph-legend-dot" style="background:var(--coral)"></div> Patentes</div>
+          <div class="graph-legend-item"><div class="graph-legend-dot" style="background:var(--accent-blue)"></div> Proyectos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- KNOWLEDGE GRAPH                                 -->
+    <!-- ═══════════════════════════════════════════════ -->
+  <!-- LINEAS DE INVESTIGACION                         -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="section section-alt" id="lineas">
+    <div class="container">
+      <div class="section-header">
+        <img src="assets/Wordlogo_JJD_transparente.png?v=2" alt="Brand Mark" class="section-watermark">
+        <h2>Líneas de Investigación</h2>
+        <p>Las 6 áreas clave que articulan la producción científica y la transferencia tecnológica del Prof. Díaz-Mochón</p>
+      </div>
+
+      <div class="categories-grid">
+        <!-- Card 1 -->
+        <div class="category-card reveal border-teal">
+          <div class="category-header">
+            <span class="category-icon icon-teal">🧬</span>
+            <div class="category-title-group">
+              <h3>1. Química Dinámica y Análisis de Ácidos Nucleicos</h3>
+              <div class="category-stats">
+                <span class="badge badge-teal">📄 ~25 Artículos</span>
+                <span class="badge badge-teal">🎓 2 Tesis</span>
+              </div>
+            </div>
+          </div>
+          <div class="category-body">
+            <p class="category-desc">Esta es el área fundacional del trabajo del profesor. Consiste en el uso de la química dinámica para la detección de ácidos nucleicos sin necesidad de enzimas (PCR-free).</p>
+            <div class="category-section">
+              <h4>🎯 Resultados Clave</h4>
+              <ul>
+                <li>Invención de la tecnología base de DESTINA Genomics.</li>
+                <li>Patentes sobre caracterización de nucleobases y sondas de PNA (<em>Peptide Nucleic Acids</em>).</li>
+              </ul>
+            </div>
+            <div class="category-section category-link-box link-teal">
+              <h4>🔗 Intercorrelación</h4>
+              <p>Esta química básica es la "llave" que permite desarrollar los ensayos altamente específicos que luego se aplicarán en la biopsia líquida (Categoría 2). Además, aporta los cimientos sintéticos para la codificación PNA en química combinatoria (Categoría 5).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="category-card reveal border-mint">
+          <div class="category-header">
+            <span class="category-icon icon-mint">🩸</span>
+            <div class="category-title-group">
+              <h3>2. Biopsia Líquida y Biomarcadores</h3>
+              <div class="category-stats">
+                <span class="badge badge-mint">📄 ~20 Artículos</span>
+                <span class="badge badge-mint">🎓 2 Tesis</span>
+              </div>
+            </div>
+          </div>
+          <div class="category-body">
+            <p class="category-desc">El Dr. Mochón traslada sus descubrimientos químicos a muestras de fluidos biológicos (plasma, suero) para buscar firmas de enfermedades de forma no invasiva. Promotor y co-fundador de la <em>International Society of Liquid Biopsy (ISLB)</em>.</p>
+            <div class="category-section">
+              <h4>🎯 Resultados Clave</h4>
+              <ul>
+                <li>Detección directa de microRNAs (como el miR-122 para daño hepático y miR-21).</li>
+                <li>Aislamiento de células tumorales circulantes y exosomas en fluidos biológicos.</li>
+              </ul>
+            </div>
+            <div class="category-section category-link-box link-mint">
+              <h4>🔗 Intercorrelación</h4>
+              <p>Utiliza la Química Dinámica para "leer" los biomarcadores, y se apoya en la Nanotecnología (Categoría 3) para "capturar" o "iluminar" dichos marcadores en la sangre. Las firmas detectadas se aplican posteriormente en dispositivos portátiles (Categoría 4).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="category-card reveal border-orange">
+          <div class="category-header">
+            <span class="category-icon icon-orange">🧪</span>
+            <div class="category-title-group">
+              <h3>3. Nanotecnología y Teranóstica</h3>
+              <div class="category-stats">
+                <span class="badge badge-orange">📄 ~22 Artículos</span>
+                <span class="badge badge-orange">🎓 2 Tesis</span>
+              </div>
+            </div>
+          </div>
+          <div class="category-body">
+            <p class="category-desc">Desarrollo de materiales a nanoescala (nanosistemas duales, <em>Quantum Dots</em>, nanopartículas metalofluorescentes) que sirven tanto para terapia como para diagnóstico (Teranóstica).</p>
+            <div class="category-section">
+              <h4>🎯 Resultados Clave</h4>
+              <ul>
+                <li>Patentes sobre "Nanopartículas Funcionalizadas" (2023) y "Nanosistemas Multifuncionales para Teragnosis" (2018).</li>
+                <li>Desarrollo de herramientas avanzadas de marcaje (<em>mass-tags</em>, fluoróforos) para Citometría de Masas y de Flujo.</li>
+              </ul>
+            </div>
+            <div class="category-section category-link-box link-orange">
+              <h4>🔗 Intercorrelación</h4>
+              <p>Las nanopartículas actúan como el sustrato físico donde ocurren las reacciones de química dinámica, permitiendo su lectura en dispositivos <em>Point-of-Care</em> (Categoría 4). También actúan como vehículos de liberación de las pequeñas moléculas con actividad farmacológica (Categoría 6).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="category-card reveal border-blue">
+          <div class="category-header">
+            <span class="category-icon icon-blue">📱</span>
+            <div class="category-title-group">
+              <h3>4. Aplicaciones Clínicas y Dispositivos Point-of-Care</h3>
+              <div class="category-stats">
+                <span class="badge badge-blue">📄 ~15 Artículos</span>
+                <span class="badge badge-blue">🎓 3 Tesis</span>
+              </div>
+            </div>
+          </div>
+          <div class="category-body">
+            <p class="category-desc">Toda la investigación converge en aplicaciones clínicas concretas y desarrollo de hardware/software de fácil uso para el diagnóstico de enfermedades y monitorización en el mismo lugar de atención al paciente (<em>Point-of-Care</em>).</p>
+            <div class="category-section">
+              <h4>🎯 Resultados Clave</h4>
+              <ul>
+                <li>Detección de <em>Leishmania</em> y SARS-CoV-2 mediante dispositivos acoplados a smartphones (CoVreader/CoVradar).</li>
+                <li>Medición de la toxicidad hepática (DILI) por paracetamol en hospitales monitorizando el miR-122. Integración reciente de CRISPR-Cas13.</li>
+              </ul>
+            </div>
+            <div class="category-section category-link-box link-blue">
+              <h4>🔗 Intercorrelación</h4>
+              <p>Es el destino final de las sondas diseñadas en Química Dinámica (1), amplificadas o soportadas por Nanotecnología (3) y estructuradas sobre Biomateriales (5). Recibe directamente los biomarcadores identificados en la Biopsia Líquida (2).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="category-card reveal border-purple">
+          <div class="category-header">
+            <span class="category-icon icon-purple">🧬</span>
+            <div class="category-title-group">
+              <h3>5. Biomateriales y Química Combinatoria</h3>
+              <div class="category-stats">
+                <span class="badge badge-purple">📄 ~15 Artículos</span>
+                <span class="badge badge-purple">🎓 3 Tesis</span>
+              </div>
+            </div>
+          </div>
+          <div class="category-body">
+            <p class="category-desc">Abarca el uso de metodologías de alto rendimiento (<em>High-Throughput</em>) y la síntesis química avanzada para crear herramientas de descubrimiento biológico y nuevos soportes físicos.</p>
+            <div class="category-section">
+              <h4>🎯 Resultados Clave</h4>
+              <ul>
+                <li>Diseño de librerías de péptidos codificadas con PNA (<em>split-and-mix</em>) y <em>polymer microarrays</em> para explorar morfología celular.</li>
+                <li>Creación de hidrogeles supramoleculares para vehiculización e ingeniería de tejidos.</li>
+              </ul>
+            </div>
+            <div class="category-section category-link-box link-purple">
+              <h4>🔗 Intercorrelación</h4>
+              <p>Reutiliza el PNA (Categoría 1) como "código de barras" molecular para identificar secuencias peptídicas o pequeñas moléculas (Categoría 6) con bioactividad o afinidad. Estos biomateriales alimentan la investigación en Aplicaciones Clínicas (Categoría 4).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="category-card reveal border-coral">
+          <div class="category-header">
+            <span class="category-icon icon-coral">💊</span>
+            <div class="category-title-group">
+              <h3>6. Desarrollo de Síntesis Orgánicas</h3>
+              <div class="category-stats">
+                <span class="badge badge-coral">📄 ~10 Artículos</span>
+                <span class="badge badge-coral">🎓 1 Tesis</span>
+              </div>
+            </div>
+          </div>
+          <div class="category-body">
+            <p class="category-desc">Engloba la investigación en síntesis orgánica y química médica, desarrollando metodologías novedosas para crear moléculas estructurales y pequeñas moléculas como potenciales fármacos.</p>
+            <div class="category-section">
+              <h4>🎯 Resultados Clave</h4>
+              <ul>
+                <li>Tesis de Álvaro Lorente: <em>"Design, synthesis and biological evaluation of 6-alkoxypurine derivatives as kinase inhibitors"</em> (2019).</li>
+                <li>Sistemas mono-vaso eficientes y selectivos (purinas, purido-triazolo-piracinas, pirimidinas) con ortogonalidad total Dde/Fmoc.</li>
+              </ul>
+            </div>
+            <div class="category-section category-link-box link-coral">
+              <h4>🔗 Intercorrelación</h4>
+              <p>Proporciona las metodologías sintéticas fundamentales que alimentan la Química Combinatoria (Categoría 5) para la creación de librerías. Una vez identificados los compuestos líderes o sondas, la Nanotecnología (Categoría 3) los vehiculiza.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- FOOTER                                          -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Juan José Díaz-Mochón</h3>
+          <p>Profesor Titular · Universidad de Granada · GENYO</p>
+          <p>Departamento de Química Farmacéutica y Orgánica</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://orcid.org/0000-0003-1736-4204" target="_blank" rel="noopener" class="footer-link">🆔 ORCID</a>
+          <a href="https://scholar.google.es/citations?user=XM9IBDYAAAAJ" target="_blank" rel="noopener" class="footer-link">📚 Google Scholar</a>
+          <a href="https://www.ugr.es" target="_blank" rel="noopener" class="footer-link">🏛️ UGR</a>
+          <a href="https://www.genyo.es" target="_blank" rel="noopener" class="footer-link">🧬 GENYO</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        Portfolio académico para la defensa de la posición de Catedrático de Universidad · 2026
+      </div>
+    </div>
+  </footer>
+
+  <!-- Details Modal Container -->
+  <div class="modal-backdrop" id="details-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-wrapper">
+          <div class="modal-title" id="modal-title-content">Título del Elemento</div>
+          <div class="modal-subtitle" id="modal-subtitle-content">Subtítulo o Autores</div>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Content will be injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Hover Preview Popup -->
+  <div id="hover-popup" class="hover-popup-container"></div>
+
+  <!-- Scripts (order matters: data → charts → timeline → graph → app) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/timeline.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
